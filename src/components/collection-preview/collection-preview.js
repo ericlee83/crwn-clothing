@@ -4,12 +4,12 @@ import "./collection-preview.style.scss";
 
 const CollectionPreview = ({ title, items }) => (
   <div className="collection-preview">
-    <div className="title">{title}</div>
+    <div className="title">{title.toUpperCase()}</div>
     <div className="preview">
       {items
         .filter((item, idx) => idx < 4)
-        .map(({ id, ...itemProps }) => (
-          <CollectionItem key={id} {...itemProps} />
+        .map( item => (
+          <CollectionItem key={item.id} item={item} />
         ))}
     </div>
   </div>
