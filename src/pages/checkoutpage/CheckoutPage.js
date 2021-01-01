@@ -1,5 +1,11 @@
 import React from "react";
-import {CheckoutPageContainer,CheckoutBlockContainer,CheckoutHeaderContainer,CheckoutTotalContainer,CheckoutWarningContainer} from './CheckoutPage.style'
+import {
+  CheckoutPageContainer,
+  CheckoutBlockContainer,
+  CheckoutHeaderContainer,
+  CheckoutTotalContainer,
+  CheckoutWarningContainer,
+} from "./CheckoutPage.style";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import {

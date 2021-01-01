@@ -2,7 +2,7 @@ import React from "react";
 import FormInput from "../form-input/form-input";
 import CustomButton from "../custom-button/custom-button";
 import { auth, createUserProfileDocument } from "../../firebase/firebase.utils";
-import {SignupContainer,SignUpTitleContainer} from './sign-up.style';
+import { SignupContainer, SignUpTitleContainer } from "./sign-up.style";
 
 class SignUp extends React.Component {
   constructor() {
@@ -16,7 +16,7 @@ class SignUp extends React.Component {
     };
   }
 
-  handleSubmit = async event => {
+  handleSubmit = async (event) => {
     event.preventDefault();
     const { displayName, email, password, confirmPassword } = this.state;
     if (password !== confirmPassword) return;
@@ -37,11 +37,10 @@ class SignUp extends React.Component {
     }
   };
 
-  handleChange = event =>{
-    const {name,value} = event.target;
-    this.setState({[name]:value});
-
-  }
+  handleChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+  };
 
   render() {
     const { displayName, email, password, confirmPassword } = this.state;

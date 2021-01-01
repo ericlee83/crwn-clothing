@@ -4,7 +4,11 @@ import CartItem from "../cart-item/cart-item";
 import { toggleCartHidden } from "../../redux/cart/cart.actions";
 import { connect } from "react-redux";
 import { selectCartItems } from "../../redux/cart/cart.selectors";
-import {CartDropDownContainer,CartItemsContainer,EmptyMessageContainer} from "./cart-dropdown.style"
+import {
+  CartDropDownContainer,
+  CartItemsContainer,
+  EmptyMessageContainer,
+} from "./cart-dropdown.style";
 import { withRouter } from "react-router-dom";
 
 const CartDropdown = ({ cartItems, history, dispatch }) => (

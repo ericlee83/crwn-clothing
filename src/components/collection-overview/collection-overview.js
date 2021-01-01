@@ -1,5 +1,5 @@
 import React from "react";
-import {CollectionOverviewContainer} from './collection-overview.style'
+import { CollectionOverviewContainer } from "./collection-overview.style";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import CollectionPreview from "../collection-preview/collection-preview";
