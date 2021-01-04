@@ -40,6 +40,7 @@ const CheckoutPage = ({ cartItems, total }) => (
     <CheckoutTotalContainer>
       <span>Total: ${total}</span>
     </CheckoutTotalContainer>
+    <StripeCheckoutButton price={total} />
     <CheckoutWarningContainer>
       *Please use the following test credit card for payments*
       <br />
@@ -47,7 +48,6 @@ const CheckoutPage = ({ cartItems, total }) => (
       <br />
       *Find more on stripe on https://github.com/azmenak/react-stripe-checkout
     </CheckoutWarningContainer>
-    <StripeCheckoutButton price={total} />
   </CheckoutPageContainer>
 );
 

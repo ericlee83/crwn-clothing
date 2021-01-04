@@ -10,6 +10,9 @@ const baseStyles = css`
     color: black;
     border: 1px solid black;
   }
+  @media screen and (max-width: 800px) {
+    font-size: 10px;
+  }
 `;
 
 const invertedStyles = css`
@@ -59,7 +62,7 @@ export const CustomButtonContainer = styled.button`
   letter-spacing: 0.3px;
   line-height: 50px;
   padding: 0 25px 0 25px;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   font-family: "Open Sans Condensed";
   font-weight: bolder;
